@@ -8,8 +8,5 @@ db.sqlite3
 # Media files
 media/
 
-# Django static files
-staticfiles/
-
 # Environment variables
 .env
