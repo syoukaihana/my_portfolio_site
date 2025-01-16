@@ -24,13 +24,14 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'localhost-your_server_name.paiza-use
 SECRET_KEY = 'django-insecure-@37iqp*h#i49ja3k+(+4a#@#cjw$=&5qd40n&fx&@j34q-k@ac'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-
+ALLOWED_HOSTS = ['*']  # Allow access from any host for testing purposes
 
 # 認証関連の設定も追加
 LOGIN_REDIRECT_URL = '/'
 LOGIN_URL = '/login/'
+LOGOUT_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = 'gallery'  # ギャラリーページにリダイレクト
 
 
